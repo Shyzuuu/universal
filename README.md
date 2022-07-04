@@ -12,6 +12,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/coastss/universal/mai
 ```
 
 # change log
+## July 3rd, 2022 (7/3/2022):
+### [Added]:
+- New loading UI
 ## January 18th, 2022 (1/18/2022):
 ### [Added]:
 - Unload button
