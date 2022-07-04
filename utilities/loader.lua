@@ -122,7 +122,7 @@ local Status = Library:Create("TextLabel", {
 	Position = UDim2.new(0.5, 0, 0, 25),
 	Size = UDim2.new(0, 0, 1, 0),
 	Font = Enum.Font.Oswald,
-	Text = "loading...",
+	Text = ("created by coasts | updated: " .. shared.BeachwaveVersion),
 	TextColor3 = Color3.fromRGB(255, 255, 255),
 	TextSize = 26,
 	TextStrokeTransparency = 0.95
@@ -138,7 +138,7 @@ local Title = Library:Create("TextLabel", {
 	Position = UDim2.new(0.5, 0, 0, 0),
 	Size = UDim2.new(0, 0, 1, 0),
 	Font = Enum.Font.Oswald,
-	Text = "",
+	Text = "beachwave",
 	TextColor3 = Color3.fromRGB(255, 255, 255),
 	TextSize = 44,
 	TextStrokeTransparency = 0.95
@@ -162,6 +162,8 @@ function Library:Open()
 	TweenService:Create(Wave, TweenInfo.new(1, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(0.5, 70, 0, 0)}):Play()
 	TweenService:Create(Title, TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(0, 0, 0, 0), Size = UDim2.new(1, 0, 1, 0)}):Play()
 	TweenService:Create(Status, TweenInfo.new(1.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(0, 0, 0, 25), Size = UDim2.new(1, 0, 1, 0)}):Play()
+	
+	task.wait(1.5)
 end
 
 function Library:Close()
