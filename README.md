@@ -13,8 +13,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/coastss/universal/mai
 
 # change log
 ## July 6th, 2022 (7/6/2022):
+### [Added]:
+- New loader, AGAIN!
+- Dynamic FOV
 ### [Changed]:
-- Loader and optimized loading
+- Ooptimized loading
 ## July 4th, 2022 (7/4/2022):
 ### [Added]:
 - New loading UI
