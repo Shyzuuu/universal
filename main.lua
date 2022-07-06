@@ -691,7 +691,7 @@ AimbotTab:AddBind({
 
 AimbotTab:AddToggle({text = "Team Check", flag = "Aimbot Team Check"})
 AimbotTab:AddToggle({text = "Use Field of View", flag = "Aimbot Use FOV"})
---// AimbotTab:AddToggle({text = "Dynamic FOV", flag = "Aimbot Dynamic FOV"})
+AimbotTab:AddToggle({text = "Dynamic FOV", flag = "Aimbot Dynamic FOV"})
 AimbotTab:AddColor({
     text = "FOV Circle Color",
     flag = "Aimbot FOV Color",
