@@ -493,10 +493,12 @@ RunService:BindToRenderStep(LoopId, 1, function()
     FOVCircle.Color = Library.flags["Aimbot FOV Color"]
     FOVCircle.Visible = ((Library.flags["Aimbot Enabled"] and Library.flags["Aimbot Use FOV"]) and true) or false
     
-    if Library.flags["Aimbot Dynamic FOV"] then
-        FOVCircle.Radius = (Library.flags["Aimbot FOV Radius"] + workspace.CurrentCamera.FieldOfView)
-    else
+    if Library.flags["Aimbot FOV Type"] == "Static" then
         FOVCircle.Radius = Library.flags["Aimbot FOV Radius"]
+    elseif Library.flags["Aimbot FOV Type"] == "Dynamic" then
+        FOVCircle.Radius = (Library.flags["Aimbot FOV Radius"] + workspace.CurrentCamera.FieldOfView)
+    elseif Library.flags["Aimbot FOV Type"] == "Dynamic Reversed" then
+        FOVCircle.Radius = (Library.flags["Aimbot FOV Radius"] - workspace.CurrentCamera.FieldOfView)
     end
 
     if Library.flags["Aimbot Enabled"] and Library.flags["Aimbot Active"] then
@@ -691,7 +693,13 @@ AimbotTab:AddBind({
 
 AimbotTab:AddToggle({text = "Team Check", flag = "Aimbot Team Check"})
 AimbotTab:AddToggle({text = "Use Field of View", flag = "Aimbot Use FOV"})
-AimbotTab:AddToggle({text = "Dynamic FOV", flag = "Aimbot Dynamic FOV"})
+--// AimbotTab:AddToggle({text = "Dynamic FOV", flag = "Aimbot Dynamic FOV"})
+AimbotTab:AddList({
+    text = "FOV Type",
+    flag = "Aimbot FOV Type",
+    values = {"Static", "Dynamic", "Dynamic Reversed"}
+})
+
 AimbotTab:AddColor({
     text = "FOV Circle Color",
     flag = "Aimbot FOV Color",
