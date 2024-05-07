@@ -49,9 +49,7 @@ local UI = CreateObject("ScreenGui", {
 	ZIndexBehavior = Enum.ZIndexBehavior.Global,
 })
 
-if syn.protect_gui then
-	syn.protect_gui(UI)
-elseif get_hidden_gui then
+if get_hidden_gui then
 	get_hidden_gui(UI)
 end
 
