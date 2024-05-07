@@ -8,10 +8,13 @@ universal aimbot and visuals for roblox
 
 # script
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/coastss/universal/main/main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shyzuuu/universal/main/main.lua"))()
 ```
 
 # change log
+## May 7th, 2024 (5/7/2024):
+### [Fix]:
+- Removed synapse protect_gui
 ## July 6th, 2022 (7/6/2022):
 ### [Added]:
 - New loader, AGAIN!
