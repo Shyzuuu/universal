@@ -1627,9 +1627,7 @@ function library:Init()
 	
 	self.base = self.base or self:Create("ScreenGui")
 
-	if syn.protect_gui then
-		syn.protect_gui(self.base)
-	elseif get_hidden_gui then
+	if get_hidden_gui then
 		get_hidden_gui(self.base)
 	end
 	
