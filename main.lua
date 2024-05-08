@@ -224,9 +224,10 @@ local function CreateObject(Type, Properties)
 end
 
 local Games = {
-    [1954906532] = "games/riotfall.lua", --// RIOTFALL
-    [111958650] = "games/arsenal.lua", --// Arsenal
-    [113491250] = "games/phantom_forces.lua", --// Phantom Forces
+	[5595252083] = "games/riotfall.lua", --// RIOTFALL LEGACY
+	[7796842481] = "games/riotfall.lua", -- RIOTFALL BETA
+	[111958650] = "games/arsenal.lua", --// Arsenal
+	[113491250] = "games/phantom_forces.lua", --// Phantom Forces
 }
 
 if not getgenv().Library then
