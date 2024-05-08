@@ -1,4 +1,4 @@
-shared.BeachwaveVersion = "7/6/2022"
+shared.BeachwaveVersion = "5/8/2022"
 
 local MoveMouse = mousemoverel
 local ReadFile = readfile
