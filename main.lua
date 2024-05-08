@@ -520,15 +520,10 @@ RunService:BindToRenderStep(LoopId, 1, function()
 
         local OnScreen, PassedTeamCheck = false, true
         local IsPlayerAlive = PlayerUtilities:IsPlayerAlive(Player)
-	warn(IsPlayerAlive, "PlayerAlive - Beachwave V2")
         local Health = PlayerUtilities:GetHealth(Player)
-	warn(Health, "PlayerHealth - Beachwave V2")
         local BodyParts = PlayerUtilities:GetBodyParts(Player)
-	warn(BodyParts, "PlayerBodyParts - Beachwave V2")
         local PlayerColor = (PlayerUtilities:IsOnClientTeam(Player) and Library.flags["Visuals Ally Color"]) or Library.flags["Visuals Enemy Color"]
-	warn(PlayerColor, "PlayerColor - Beachwave V2")
         local IsOnClientTeam = PlayerUtilities:IsOnClientTeam(Player)
-	warn(IsOnClientTeam, "PlayerOnClientTeam - Beachwave V2")
 
         if Library.flags["Visuals Use Team Color"] then
             PlayerColor = PlayerUtilities:GetTeamColor(Player)
