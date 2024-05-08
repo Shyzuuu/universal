@@ -24,7 +24,7 @@ local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local Repository = "https://raw.githubusercontent.com/coastss/universal/main/"
+local Repository = "https://raw.githubusercontent.com/Shyzuuu/universal/main/"
 local BaseTweenInfo = TweenInfo.new(0.75, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
 
 --// Loader
